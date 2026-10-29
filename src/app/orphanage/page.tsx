@@ -1,6 +1,7 @@
 
 import type { Metadata } from "next";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Our Children | Remain In My Love",
@@ -73,9 +74,8 @@ export default function OrphanagePage() {
           <div className="relative mx-auto max-w-[1240px] px-6 py-20 sm:px-10 sm:py-28 lg:px-16 lg:py-32">
             <p className="mb-6 flex items-center gap-3 text-[10px] font-semibold tracking-[0.28em] text-[#D6AD59] sm:text-xs">
               <span className="h-px w-9 bg-[#D6AD59]" />
-              CHILDREN'S CARE & SUPPORT
+              CHILDREN&apos;S CARE & SUPPORT
             </p>
-
             <h1 className="max-w-[800px] font-serif text-5xl leading-[1.12] tracking-[-0.035em] text-[#FFFCF6] sm:text-6xl md:text-7xl">
               Every child deserves
               <br />
@@ -86,7 +86,7 @@ export default function OrphanagePage() {
 
             <p className="mt-7 max-w-[550px] text-sm leading-7 text-white/80 sm:text-base sm:leading-8">
               A little care can make a lasting difference. Discover how
-              you can support a child's wellbeing, education and journey
+              you can support a child&apos;s wellbeing, education and journey
               towards a brighter future.
             </p>
 
@@ -209,7 +209,7 @@ export default function OrphanagePage() {
               Love is more than
               <br />
               <em className="font-normal text-[#D6AD59]">
-                words. It's action.
+                words. It&apos;s action.
               </em>
             </h2>
 
@@ -228,16 +228,7 @@ export default function OrphanagePage() {
         </section>
       </main>
 
-      <footer className="flex flex-col items-center justify-between gap-4 bg-[#250004] px-6 py-7 text-center text-[11px] text-white/65 sm:flex-row sm:px-10 lg:px-16">
-        <p>© 2026 Remain In My Love. All rights reserved.</p>
-
-        <a
-          href="/donate"
-          className="text-[#D6AD59] transition-colors hover:text-[#FFF0D6]"
-        >
-          Support the mission ↗
-        </a>
-      </footer>
+      <Footer />
     </>
   );
 }

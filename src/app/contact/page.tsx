@@ -1,5 +1,6 @@
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const contactDetails = [
   {
@@ -284,10 +285,7 @@ export default function ContactPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#321827] px-6 py-6 text-center text-sm text-[#d8c8ce]">
-        
-        <p>© 2026 Remain In My Love. All rights reserved.</p>
-      </footer>
+      <Footer />
     </main>
   );
 }

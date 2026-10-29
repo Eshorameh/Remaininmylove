@@ -1,6 +1,7 @@
 
 import type { Metadata } from "next";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -62,14 +63,7 @@ const focusAreas = [
   },
 ];
 
-const burgundy = "#730104";
-const burgundyDark = "#3F0005";
-const plum = "#481B45";
-const gold = "#D6AD59";
-const cream = "#FFF0D6";
-const paper = "#FFFCF6";
-const ink = "#30201D";
-const muted = "#776762";
+
 
 export default function AboutPage() {
   return (
@@ -383,16 +377,7 @@ export default function AboutPage() {
       </main>
 
       {/* FOOTER */}
-      <footer className="flex flex-col items-center justify-between gap-4 bg-[#250004] px-6 py-7 text-center text-[11px] text-white/65 sm:flex-row sm:px-10 lg:px-16">
-        <p>© 2026 Remain In My Love. All rights reserved.</p>
-
-        <a
-          href="/donate"
-          className="text-[#D6AD59] transition-colors hover:text-[#FFF0D6]"
-        >
-          Support the mission ↗
-        </a>
-      </footer>
+      <Footer />
     </>
   );
 }

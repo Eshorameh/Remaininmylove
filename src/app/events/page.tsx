@@ -1,4 +1,5 @@
-
+import Link from "next/link";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 const events = [
@@ -336,19 +337,17 @@ export default function EventsPage() {
             and opportunities to grow with the Remain In My Love community.
           </p>
 
-          <a
-            href="/"
-            className="mt-8 inline-flex rounded-full border border-[#d9b96e] px-7 py-3.5 text-sm font-bold text-[#f4d99a] transition hover:bg-[#d9b96e] hover:text-[#3e2030]"
-          >
-            Back to Home
-          </a>
+          <Link
+        href="/"
+        className="mt-8 inline-flex rounded-full border border-[#d9b96e] px-7 py-3.5 text-sm font-bold text-[#f4d99a] transition hover:bg-[#d9b96e] hover:text-[#3e2030]"
+      >
+        Back to Home
+      </Link>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#321827] px-6 py-6 text-center text-sm text-[#d8c8ce]">
-        <p>© 2026 Remain In My Love. All rights reserved.</p>
-      </footer>
+      <Footer />
     </main>
   );
 }

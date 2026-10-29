@@ -1,5 +1,7 @@
-
+import Link from "next/link";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+
 
 const teamGroups = [
   {
@@ -232,21 +234,17 @@ export default function NigerianTeamPage() {
               understanding, care, and commitment.
             </p>
 
-            <a
-              href="/"
-              className="mt-8 inline-flex items-center justify-center rounded-full bg-[#45172f] px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-[#612443]"
-            >
-              Explore Remain In My Love
-            </a>
+
+      <Link
+        href="/"
+        className="mt-8 inline-flex items-center justify-center rounded-full bg-[#45172f] px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-[#612443]"
+      >
+        Explore Remain In My Love
+      </Link>
           </div>
         </section>
-
         {/* Footer */}
-        <footer className="bg-[#351326] px-6 py-8 text-center text-sm text-white/70">
-    
-            <p>© 2026 Remain In My Love. All rights reserved.</p>
-          
-        </footer>
+        <Footer />
       </main>
     </>
   );

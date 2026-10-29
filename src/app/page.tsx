@@ -1,4 +1,5 @@
 
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ImageSlider from "@/components/ImageSlider";
 
@@ -107,10 +108,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="site-footer">
-       <p>© 2026 Remain In My Love. All rights reserved.</p>
-        <a href="/donate">Support the mission ↗</a>
-      </footer>
+      <Footer />
     </>
   );
 }
