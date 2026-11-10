@@ -13,7 +13,7 @@
   --font-body: Arial, Helvetica, sans-serif;
 }
 
-@theme inline {
+:root {
   --color-background: var(--paper);
   --color-foreground: var(--ink);
   --font-sans: var(--font-geist-sans);
