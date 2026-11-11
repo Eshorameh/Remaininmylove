@@ -37,6 +37,12 @@ export default async function AdminDashboardShell({
             >
               Stories & Blog
             </Link>
+            <Link
+              href="/admin/comments"
+              className="block rounded-lg px-3 py-2.5 text-sm font-medium text-white/75 transition hover:bg-white/10 hover:text-white"
+            >
+              Comments
+            </Link>
           </div>
 
           <p className="mt-8 px-3 text-xs leading-6 text-white/55">
